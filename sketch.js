@@ -149,6 +149,7 @@ if(mousePressedOver(play))
 }
   if (gameState === PLAY)
   {
+    background.velocityX=-3;
     if (background.x < width/2-60) 
   {
     background.x = width/2;
@@ -235,7 +236,8 @@ if(mousePressedOver(play))
       gameState=PLAY;
       gameover.visible=false;
       reset.visible=false;
-      man.x=70;
+      man.x=width-width+70;
+      man.y=height-130;
       background.velocityX=-3;
       bush.x=width+800;
     }
