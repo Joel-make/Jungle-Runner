@@ -39,16 +39,16 @@ function setup()
   createCanvas(windowWidth,windowHeight);
   background = createSprite(width/2,height/2);
   background.addImage(jungle);
-  background.scale = 0.8;
+  background.scale = 0.9;
   background.velocityX = -3;
 
   f_screen = createSprite(width/2,height/2-70);
   f_screen.addImage(screen_image);
-  f_screen.scale = 1.2;
+  f_screen.scale = 0.8;
 
   play = createSprite(width/2,height-100);
   play.addImage(play_image);
-  play.scale = 1.5;
+  play.scale = 1.1;
 
   man = createSprite(width-width+70, height-130);
   man.addImage(man_running);
